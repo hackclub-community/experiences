@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hack Club Experiences</title>
+  <link rel="icon" href="https://assets.hackclub.com/icon-rounded.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container nav-shell">
+      <a
+        class="brand"
+        href="https://hackclub.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Hack Club"
+      >
+        <img
+          class="brand-icon"
+          src="https://assets.hackclub.com/icon-rounded.svg"
+          alt=""
+        >
+        <span class="brand-name">Hack Club Experiences</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <button
+          type="button"
+          class="nav-link nav-link-button"
+          id="dev-editor-open"
+          aria-haspopup="dialog"
+          aria-controls="dev-editor-modal"
+        >
+          Dev
+        </button>
+        <a
+          href="https://ysws.hackclub.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-link"
+        >
+          YSWS
+        </a>
+        <a
+          href="https://hackathons.hackclub.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-link"
+        >
+          Hackathons
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="events-section" id="events-list">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-copy">
+            <p class="eyebrow">Catalog</p>
+            <h2 class="section-title">Upcoming experiences</h2>
+          </div>
+        </div>
+
+        <div class="events-grid" id="events-grid" aria-live="polite"></div>
+
+        <div class="empty-state hidden" id="empty-state">
+          <h3>No upcoming events yet</h3>
+          <p>Add or update items in <code>events.yaml</code> and they will appear here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div
+    class="modal-backdrop hidden"
+    id="dev-editor-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="dev-editor-title"
+  >
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <p class="eyebrow">Local Preview</p>
+          <h2 class="modal-title" id="dev-editor-title">Edit <code>events.yaml</code></h2>
+        </div>
+        <button type="button" class="modal-close" id="dev-editor-close" aria-label="Close dev editor">
+          Close
+        </button>
+      </div>
+      <p class="modal-copy">Changes preview instantly in your browser and are not saved to the public site.</p>
+      <label class="sr-only" for="dev-editor-textarea">events.yaml editor</label>
+      <textarea id="dev-editor-textarea" class="dev-editor-textarea" spellcheck="false"></textarea>
+      <p class="dev-editor-status" id="dev-editor-status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <p class="footer-copy">Hack Club Experiences</p>
+      <p class="footer-note">Event Organizer? Edit <code>events.yaml</code> to update the catalog.</p>
+    </div>
+  </footer>
+</body>
+</html>

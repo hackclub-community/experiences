@@ -1,0 +1,45 @@
+events:
+  - title: "Hack Club: The Game"
+    description: "Build projects, then compete in a scavenger hunt adventure game across Manhattan"
+    start_date: "2026-05-22"
+    end_date: "2026-05-25"
+    website: https://game.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C088DT8P7B8
+    background: white 
+    title_color: black
+    icon: https://cdn.hackclub.com/019cff83-0865-7f95-b261-765ba3d738aa/image.png
+
+  - title: "Fallout"
+    description: "Build any hardware project you want. We'll fund the parts. Level up your hardware skills. Join us for a 7-day hardware hackathon in Shenzhen."
+    start_date: 2026-07-1
+    end_date: 2026-07-7
+    website: https://fallout.hackclub.com
+    slack: https://hackclub.enterprise.slack.com/archives/C037157AL30
+    background: "#41d2ff"
+    logo: https://fallout.hackclub.com/fallout.svg
+
+  - title: "Jackpot"
+    description: "Code your project - get free prizes - fly out to the next Las Vegas Hackathon."
+    start_date: "2026-05-08"
+    end_date: "2026-05-11"
+    website: "https://jackpot.hackclub.com"
+    slack: "https://hackclub.enterprise.slack.com/archives/C0AEQ8VAPA4"
+    background: "#410a0f"
+  
+  - title: "Horizons Nexus"
+    description: "Horizons is a series of hackathons happening in San Francisco, Toronto, Singapore, Central Europe, South America, Australia, and Africa."
+    start_date: "2026-06-19"
+    end_date: "2026-06-26"
+    website: "https://horizons.hackclub.com"
+    slack: "https://hackclub.enterprise.slack.com/archives/C0AEQ8VAPA4"
+    background: "#f7f1e7"
+    title_color: "black"
+
+  - title: "Stasis"
+    description: "Make 3 hardware projects. Fly to Austin, TX!"
+    start_date: "2026-05-15"
+    end_date: "2026-05-18"
+    website: "https://stasis.hackclub.com"
+    slack: "https://hackclub.enterprise.slack.com/archives/C09HSQM550A"
+    background: "#d4cdba"
+    title_color: black
